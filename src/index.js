@@ -3,7 +3,7 @@
 
 // By default, log rejections to the console when not in production mode.
 const debugEnabled = (
-    process && process.env && process.env.NODE_ENV !== 'production'
+    !(typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 'production')
 )
 const defaultRejectionHandler = debugEnabled
     ? error => { console.error(error) }
