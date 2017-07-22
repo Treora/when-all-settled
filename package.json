@@ -8,13 +8,16 @@
     "url": "https://github.com/Treora/when-all-settled.git"
   },
   "license": "Unlicense",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
     "watch": "babel src -d lib -w",
     "prepublish": "npm run build",
-    "postinstall": "postinstall-build lib"
+    "postinstall": "postinstall-build lib",
+    "test": "jest --verbose"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -23,6 +26,7 @@
     "babel-preset-stage-1": "^6.24.1"
   },
   "dependencies": {
+    "jest": "^20.0.4",
     "postinstall-build": "^3.0.1"
   }
 }
