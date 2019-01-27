@@ -13,9 +13,8 @@
   ],
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src -d lib",
+    "prepare": "babel src -d lib",
     "watch": "babel src -d lib -w",
-    "prepublish": "npm run build",
     "test": "jest --verbose"
   },
   "devDependencies": {
