@@ -2,7 +2,7 @@
   "name": "when-all-settled",
   "description": "Like Promise.all, but does not mind if any of the promises reject.",
   "author": "Gerben <gerben@treora.com>",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Treora/when-all-settled.git"
