@@ -8,10 +8,17 @@ Creates a Promise that resolves when all promises passed to it have settled
 except it does not reject if some of the given promises reject. Rejected
 promises simply result in a value `undefined` in the array of results.
 
+**DEPRECATED**: Nearly the same function has been standardised in ES2020 as
+[`Promise.allSettled(…)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled)
+Best to use that instead, if needed through e.g. [Babel](https://babeljs.io/)
+or adding a [shim](https://github.com/es-shims/promise.allsettled).
+
 
 ## Install
 
 `npm install when-all-settled`
+
+…or equivalent.
 
 
 ## Use
